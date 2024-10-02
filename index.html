@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Reproductor</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+
+<body>
+
+        <video id="mivideo" width="500px" height="500px" type="video/mp4"></video> 
+    
+    <div class="controles" id="opacidad"> 
+            
+            <div class="buttons">
+                <button onclick="retrasar()"><i class="fa-solid fa-rotate-left"></i></button>
+
+                <button onclick="InicianPpausar()"><i class="fa-solid fa-play"></i></button>
+            
+                <button onclick="avanzar()"><i class="fa-solid fa-rotate-right"></i></button>  
+            </div>
+        
+        <footer >           
+            <input type="range" id="velocidad" value="0">
+  
+            <button onclick="toggleFullscreen()" id="completa"><i class="fa-solid fa-expand"></i></button>
+        </footer>
+
+    </div>
+    
+  <script src="main.js"></script>
+<script src="https://kit.fontawesome.com/574bbc6980.js" crossorigin="a"></script>
+
+</body>
+</html>
